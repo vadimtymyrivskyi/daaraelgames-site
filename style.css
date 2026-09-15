@@ -30,3 +30,15 @@ li { margin: 6px 0 }
 footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line);
          color: var(--muted); font-size: 14px }
 footer a { margin-right: 14px }
+
+/* ── головна ───────────────────────────────────────────────────────────── */
+.lede { color: var(--muted); font-size: 17px; margin: 0 0 40px }
+.game {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+  padding: 20px 22px; margin: 0 0 14px;
+}
+.game h2 { margin: 0 0 4px; font-size: 20px; color: var(--ink) }
+.game p  { margin: 0; color: var(--muted); font-size: 15px }
+.game-links { margin: 0 0 40px; font-size: 15px }
+.game-links a { margin-right: 18px }
