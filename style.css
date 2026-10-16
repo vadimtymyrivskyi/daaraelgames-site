@@ -42,3 +42,8 @@ footer a { margin-right: 14px }
 .game p  { margin: 0; color: var(--muted); font-size: 15px }
 .game-links { margin: 0 0 40px; font-size: 15px }
 .game-links a { margin-right: 18px }
+
+/* language switcher in the footer of the legal pages */
+.langs { margin: 14px 0 0; line-height: 2 }
+.langs a, .langs span { margin-right: 0; white-space: nowrap }
+.langs span { color: var(--ink) }
