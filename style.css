@@ -44,6 +44,12 @@ footer a { margin-right: 14px }
 .game-links a { margin-right: 18px }
 
 /* language switcher in the footer of the legal pages */
-.langs { margin: 14px 0 0; line-height: 2 }
+.langs { margin: 14px 0 0 -.85em; display: flex; flex-wrap: wrap; column-gap: .55em; row-gap: 6px;
+         line-height: 1.6; clip-path: inset(0 0 0 .85em) }
 .langs a, .langs span { margin-right: 0; white-space: nowrap }
 .langs span { color: var(--ink) }
+/* every item carries its separator in front; the list is shifted left by one separator
+   (.3em dot + .55em gap) and that strip is clipped, so no line ever starts with a dot.
+   inline-block keeps the link underline off it */
+.langs > *::before { content: "·"; display: inline-block; width: .3em; text-align: center;
+                     margin-right: .55em; color: var(--muted); text-decoration: none }
